@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    background-color: hsl(212, 45%, 89%)
+    background-color: hsl(212, 45%, 89%);
+    padding: .8em;
 }
 
 h3 {
@@ -25,19 +26,21 @@ p {
 
 .card {
     background-color: white;
-    box-shadow: 0 16px 16px 0px rgba(164, 164, 164, 0.2);
+    box-shadow: 0 16px 16px 0px rgb(164 164 164 / 20%);
     transition: 0.3s;
     border-radius: 1em;
-    margin: 15em 1.3em;
+    margin: 15em auto;
     padding: 0 0 2em 0;
     text-align: center;
+    max-width: 400px;
 }
 
 img {
     position: relative;
     border-radius: 1.7em;
     width: 90%;
-    padding: 1em;
+    padding: 5%;
+    background-size: contain;
 }
 
 .footer {
@@ -55,14 +58,7 @@ img {
 /* Media queries */
 
 @media only screen and (max-width: 375px) {
-    body {
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    body {
-        width: 25%;
-        margin: 0 auto;
+    .card {
+        margin: 1em auto;
     }
 }
